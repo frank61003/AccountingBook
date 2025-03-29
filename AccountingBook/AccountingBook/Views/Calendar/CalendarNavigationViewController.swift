@@ -1,5 +1,5 @@
 //
-//  LoginNavigationViewController.swift
+//  CalendarNavigationViewController.swift
 //  AccountingBook
 //
 //  Created by frank on 26.03.25.
@@ -7,25 +7,24 @@
 
 import UIKit
 
-class LoginNavigationViewController: UINavigationController {
+class CalendarNavigationViewController: UINavigationController {
     
     init() {
-        let rootVC = LoginViewController()
+        let rootVC = CalendarViewController()
         super.init(rootViewController: rootVC)
     }
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
-        self.viewControllers=[]
+
         // Do any additional setup after loading the view.
     }
     
+
     
-    
+
 }
