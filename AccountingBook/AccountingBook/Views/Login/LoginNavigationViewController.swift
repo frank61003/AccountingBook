@@ -20,10 +20,6 @@ class LoginNavigationViewController: UINavigationController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
-        self.viewControllers=[]
-        // Do any additional setup after loading the view.
     }
     
     
