@@ -6,11 +6,16 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class SettingViewController: UIViewController {
     
     
-    private let scrollView = UIScrollView()
+    private let scrollView: UIScrollView = {
+        let scrollView  = UIScrollView()
+        scrollView.translatesAutoresizingMaskIntoConstraints = false
+        return scrollView
+    }()
     private let contentView = UIView()
     private let logoutButton: UIButton = {
         let loginButton = UIButton(type: .system) // 使用系統樣式按鈕
@@ -23,9 +28,16 @@ class SettingViewController: UIViewController {
     }()
     
     @objc func logoutButtonTapped() {
-        if let sceneDelegate = UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate {
-            sceneDelegate.window?.rootViewController = LoginViewController()
+        do {
+            try Auth.auth().signOut()
+            if let sceneDelegate = UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate {
+                sceneDelegate.window?.rootViewController = LoginNavigationViewController()
+            }
+            
+        } catch let signOutError as NSError {
+            print("登出失敗: \(signOutError.localizedDescription)")
         }
+        
     }
     override func viewDidLoad() {
         super.viewDidLoad()
