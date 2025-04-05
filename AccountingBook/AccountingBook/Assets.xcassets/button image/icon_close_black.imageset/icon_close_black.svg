@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+    <defs>
+        <path id="fsvbmn4mca" d="M10.537.251c.335-.335.877-.335 1.212 0 .335.335.335.877 0 1.212L7.212 6l4.537 4.537c.307.307.332.788.077 1.124l-.077.088c-.335.335-.877.335-1.212 0L6 7.212l-4.537 4.537c-.307.307-.788.332-1.124.077l-.088-.077c-.335-.335-.335-.877 0-1.212L4.788 6 .251 1.463C-.056 1.156-.08.675.174.34L.251.25c.335-.335.877-.335 1.212 0L6 4.788z"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <g>
+                <g>
+                    <g>
+                        <g transform="translate(-331 -64) translate(0 44) translate(156 20) translate(175) translate(6 6)">
+                            <use fill="#000" fill-rule="nonzero" opacity=".7" xlink:href="#fsvbmn4mca"/>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
